@@ -1,11 +1,11 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className=" flex flex-col mt-10">
-      <div className="flex flex-row justify-between  mr-16 ml-16">
+      {/* <div className="flex flex-row justify-between  mr-16 ml-16">
         <div className="relative">
   <img src="../../../images/SEXUAL_ABUSE-transformed.jpg" alt="Your Image" className="w-[90%] h-full object-cover"/>
   <div className="absolute inset-0 bg-[#3296F6] opacity-50 w-[90%] h-full"></div>
@@ -23,6 +23,26 @@ const Home = () => {
           </p>
           <button
             className="bg-[#3296F6] text-center text-white p-4 rounded-2xl max-w-[9rem]"
+            onClick={() => navigate("/info")}
+          >
+            Make a Report
+          </button>
+        </div>
+      </div> */}
+      <div className="w-full  p-[4rem] bg-[#3296F6]">
+        <div className="flex flex-col justify-between mr-[7rem] gap-6">
+          <h1 className="text-left text-4xl max-w-lg font-bold leading-tight text-[#FFFFFF]">
+            Defenders of Innocence: Unsung Champions Fighting Misinformation
+          </h1>
+          <p className="max-w-sm text-[#FFFFFF]">
+            Within our community of heroes, you'll find the unsung warriors who
+            have made it their life's mission to battle child sexual abuse
+            misinformation. Their relentless efforts, education campaigns, and
+            unyielding commitment are our greatest defense against this threat,
+            ensuring that our children grow up in a safer, more informed world.
+          </p>
+          <button
+            className="bg-[#0b579e] text-center text-white p-4 rounded-2xl max-w-[9rem]"
             onClick={() => navigate("/info")}
           >
             Make a Report
@@ -70,6 +90,6 @@ const Home = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
