@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col items-start mt-20">
-          <p className="text-[#ffffffbf] font-light mb-[24px]">Navigation</p>
+          <p className="text-[#ffffffbf] font-ligt mb-[24px]">Navigation</p>
           <a
             href="/"
             className="text-white border-b-[#ffffffbf] mb-[16px] border-b-[1px]"

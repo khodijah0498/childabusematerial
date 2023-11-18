@@ -65,8 +65,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
-        <h1>OUR PARTNERS</h1>
+      <div className='p-8'>
+        <h1 className='text-4xl font-bold'>OUR PARTNERS</h1>
       </div>
     </div>
   );

@@ -4,13 +4,12 @@ const Contact = () => {
   return (
     <div>
       <div className="flex flex-row mx-6 justify-center items-center">
-        <div className="h-[40rem] w-[40rem] bg-[#3296F6]"></div>
-        <div className="h-[40rem] w-[40rem] bg-slate-300">
+        <div className="h-[45rem] w-[40rem] bg-[#3296F6] bg-[url(../../../images/abuse.jpg)] bg-no-repeat bg-center bg-auto"></div>
+        <div className="h-[45rem] w-[40rem] bg-slate-300">
           <div className="max-w-[31.8rem] mx-auto flex flex-col items-center pt-4 pb-12">
-            <h1 className="text-5xl text-center font-bold ">Contact Us</h1>
-            <p className=" text-center font-light px-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              consectetur justo quis
+            <h1 className="text-5xl text-center font-bold text-[#3296f6] p-5">Contact Us</h1>
+            <p className=" text-center font-light px-3 text-2xl font-bold">
+              We are here to have a conversation with you. Get in touch today for enquiries.
             </p>
             <div className="w-full flex flex-col gap-8 px-8 mt-[4.37rem]">
               <div className="w-full flex rounded-3xl py-[0.855rem] pl-8 bg-[#F2F1F1]">
