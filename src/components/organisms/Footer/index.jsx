@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
           <div className="">
             <img
-              src="../../../../images/ZERAB REPORT WHITE.png"
+              src="../../../../images/ZERAB REPORT LOGO 3.png"
               className="w-[19rem] h-[10rem] mt-[-6rem] ml-[-4rem]"
               alt=""
             />

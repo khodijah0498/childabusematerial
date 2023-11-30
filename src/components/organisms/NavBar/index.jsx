@@ -23,8 +23,8 @@ const NavBar = () => {
     }
   ];
   return (
-    <div className="flex justify-between w-[90%] m-auto items-center cursor-pointer">
-      <div className="logo"><img src="../../../../images/ZERAB REPORT LOGO 3.jpg" alt="logo" className="h-40" /></div>
+    <div className="flex justify-between w-[100%] m-auto items-center cursor-pointer fixed z-10 bg-white">
+      <div className="logo"><img src="../../../../images/ZERAB REPORT LOGO 1.png" alt="logo" className="h-40" /></div>
       <div className="flex">
         {tabs.map(({ name, link }, index) => (
           <div key={index} onClick={() => navigate(link)} className="p-5">
