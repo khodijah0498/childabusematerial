@@ -4,12 +4,25 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div className=" flex flex-col mt-10">
-      {/* <div className="flex flex-row justify-between  mr-16 ml-16">
+    <div className=" flex flex-col mt-10>
+      
+        <div className='flex flex-row w-[full] h-[600px] items-center bg-fixed bg-[url(../../../images/therapy.jpeg)]   bg-no-repeat bg-center bg-cover'>
+         <div className='flex flex-row w-[100%] h-[100%] items-center bg-black bg-opacity-60'>
+          <div className="flex flex-col justify-between mr-[7rem]">
+              <h1 className="text-left text-4xl items-center justify-center
+              max-w-20 m-[180px] ml-20 font-bold leading-tight text-center text-[#3296F6] m-auto">
+                Defenders of Innocence: Unsung Champions Fighting Misinformation
+              </h1>
+            </div>
+          </div>
+        </div>
+
+      <div className="flex flex-row justify-between  mr-16 ml-16 mt-16>
+      {/* <div className="flex flex-row justify-between  mr-16 ml
         <div className="relative">
-  <img src="../../../images/SEXUAL_ABUSE-transformed.jpg" alt="Your Image" className="w-[90%] h-full object-cover"/>
-  <div className="absolute inset-0 bg-[#3296F6] opacity-50 w-[90%] h-full"></div>
-</div>
+        <img src="../../../images/SEXUAL_ABUSE-transformed.jpg" alt="Your Image" className="w-[90%] h-full object-cover"/>
+        <div className="absolute inset-0 bg-[#3296F6] opacity-50 w-[90%] h-full"></div>
+      </div>
         <div className="flex flex-col justify-between mr-[7rem]">
           <h1 className="text-left text-4xl max-w-lg font-bold leading-tight text-[#3296F6]">
             Defenders of Innocence: Unsung Champions Fighting Misinformation
@@ -85,8 +98,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
-        <h1>OUR PARTNERS</h1>
+      <div className='p-8'>
+        <h1 className='text-4xl font-bold'>OUR PARTNERS</h1>
       </div>
     </div>
   );
