@@ -4,25 +4,31 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div className=" flex flex-col mt-10>
-      
-        <div className='flex flex-row w-[full] h-[600px] items-center bg-fixed bg-[url(../../../images/therapy.jpeg)]   bg-no-repeat bg-center bg-cover'>
-         <div className='flex flex-row w-[100%] h-[100%] items-center bg-black bg-opacity-60'>
+    <div className=" flex flex-col mt-10">
+      <div className="flex flex-row w-[full] h-[600px] items-center bg-fixed bg-[url(../../../images/therapy.jpeg)]   bg-no-repeat bg-center bg-cover">
+        <div className="flex flex-row w-[100%] h-[100%] items-center bg-[#3296F6] bg-opacity-60">
           <div className="flex flex-col justify-between mr-[7rem]">
-              <h1 className="text-left text-4xl items-center justify-center
-              max-w-20 m-[180px] ml-20 font-bold leading-tight text-center text-[#3296F6] m-auto">
-                Defenders of Innocence: Unsung Champions Fighting Misinformation
-              </h1>
-            </div>
+            <h1
+              className=" text-4xl items-center justify-center
+              max-w-20 m-[180px] ml-20 font-bold leading-tight text-center text-white "
+            >
+              Defenders of Innocence: Unsung Champions Fighting Misinformation
+            </h1>
           </div>
         </div>
-
-      <div className="flex flex-row justify-between  mr-16 ml-16 mt-16>
-      {/* <div className="flex flex-row justify-between  mr-16 ml
-        <div className="relative">
-        <img src="../../../images/SEXUAL_ABUSE-transformed.jpg" alt="Your Image" className="w-[90%] h-full object-cover"/>
-        <div className="absolute inset-0 bg-[#3296F6] opacity-50 w-[90%] h-full"></div>
       </div>
+
+      <div
+        className="flex flex-row p-[4rem] justify-between  mr-16 ml-16 mt-16>
+      <div className="flex flex-row justify-between mr-16 ml-0>
+        <div className="relative">
+          <img
+            src="../../../images/SEXUAL_ABUSE-transformed.jpg"
+            alt="Your Image"
+            className="w-[90%] h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#3296F6] opacity-50 w-[90%] h-full"></div>
+        </div>
         <div className="flex flex-col justify-between mr-[7rem]">
           <h1 className="text-left text-4xl max-w-lg font-bold leading-tight text-[#3296F6]">
             Defenders of Innocence: Unsung Champions Fighting Misinformation
@@ -41,7 +47,7 @@ const Home = () => {
             Make a Report
           </button>
         </div>
-      </div> */}
+      </div>
       <div className="w-full  p-[4rem] bg-[#3296F6]">
         <div className="flex flex-col justify-between mr-[7rem] gap-6">
           <h1 className="text-left text-4xl max-w-lg font-bold leading-tight text-[#FFFFFF]">
@@ -98,8 +104,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='p-8'>
-        <h1 className='text-4xl font-bold'>OUR PARTNERS</h1>
+      <div className="p-8">
+        <h1 className="text-4xl font-bold">OUR PARTNERS</h1>
       </div>
     </div>
   );
