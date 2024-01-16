@@ -1,13 +1,12 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div className=" flex flex-col mt-10">
-      <div className="flex flex-row w-[full] h-[600px] items-center bg-fixed bg-[url(../../../images/therapy.jpeg)]   bg-no-repeat bg-center bg-cover">
-        <div className="flex flex-row w-[100%] h-[100%] items-center bg-[#3296F6] bg-opacity-60">
-          <div className="flex flex-col justify-between mr-[7rem]">
+    <div className="  mt-10">
+      <div className="f w-[full] h-[600px] items-center bg-fixed bg-[url(../../../images/therapy.jpeg)]   bg-no-repeat bg-center bg-cover">
+        <div className=" w-[100%] h-[100%] items-center bg-[#3296F6] bg-opacity-60">
+          <div className=" justify-between mr-[7rem]">
             <h1
               className=" text-4xl items-center justify-center
               max-w-20 m-[180px] ml-20 font-bold leading-tight text-center text-white "
@@ -19,8 +18,8 @@ const Home = () => {
       </div>
 
       <div
-        className="flex flex-row p-[4rem] justify-between  mr-16 ml-16 mt-16>
-      <div className="flex flex-row justify-between mr-16 ml-0>
+        className="flex flex-col gap-12 p-[4rem] justify-between  mr-16 ml-16 mt-16">
+      <div className="flex flex-row justify-between mr-16 ml-0">
         <div className="relative">
           <img
             src="../../../images/SEXUAL_ABUSE-transformed.jpg"
@@ -107,6 +106,7 @@ const Home = () => {
       <div className="p-8">
         <h1 className="text-4xl font-bold">OUR PARTNERS</h1>
       </div>
+    </div>
     </div>
   );
 };
