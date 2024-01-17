@@ -1,16 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Form = () => {
   const [url, setUrl] = useState('')
-  const [error, setError] = useState(false)
-  const [responses, setResponse] = useState(false)
+  const [information, setInfo] = useState('')
+  const [error, setError] = useState(null)
+  const [responses, setResponse] = useState(null)
 
   const submitForm = async (e) => {
     e.preventDefault()
     // axios.post('https://webjs-nine.vercel.app/search/check', {url})
-    const request = await fetch("https://webjs-nine.vercel.app/search/check", {
+    const res = await fetch("https://webjs-nine.vercel.app/search/check", {
       method: 'POST',
-      body: JSON.stringify({url}),
+      body: JSON.stringify({url, information}),
       headers: {
         'Content-Type': 'application/json'
       }
@@ -18,16 +19,33 @@ const Form = () => {
 
     // if(error) setInterval(() => setError(false), 3000)
 
-    const res = await request.json()
-    console.log(res)
-    if(!res.ok) return setError(res.error)
+    const response = await res.json()
+    console.log(response)
+    if(!res.ok) setError(response.error)
 
-    if(res.success == true){
-      setError(false)
-      setResponse(res.message)
+    if(res.ok){
+      setError(null)
+      setInfo('')
+      setUrl('')
+      setResponse(response.message)
     }
   }
   
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setError(null)
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, error);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setResponse(null);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, responses);
+
 
   return (
     <div className="flex  flex-col items-center justify-center bg-[#f1f0ec] p-4 shadow-base mt-8 rounded-2xl w-2/4">
@@ -70,7 +88,11 @@ const Form = () => {
           Add any relevant Information or description of the materials
         </span>
         <div className="bg-white py-2 px-3 border rounded mt-3">
-          <textarea className="bg-transparent outline-none border-none w-[100%]" />
+          <textarea
+            className="bg-transparent outline-none border-none w-[100%]"
+            value={information}
+            onChange={e => setInfo(e.target.value)}
+          />
         </div>
         <p className="mt-8 text-base">
           If you add your contact details, we have the opportunity to ask
